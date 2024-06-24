@@ -1,0 +1,179 @@
+html{
+    scroll-behavior:smooth;
+  }
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #162c3a;
+  }
+
+.experience{
+    background-color:#162c3a;
+}
+
+  h1, h2, label {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing:-1.4px;
+    font-size:36px;
+    }
+
+p {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    color: #162c3a; 
+    font-size: 18px; 
+    line-height: 1.5em;
+    letter-spacing: -1.2;
+
+    margin: 0 0 24px; 
+    text-align: justify; 
+    text-justify: inter-word; 
+  }
+
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#f7f3e8 ;
+    z-index: 1000;
+}
+
+.navbar li{
+    display:inline-block;
+    padding: 30px 20px;
+}
+
+.navbar a {
+    text-decoration:none;
+    color:black;
+    padding:14px 16px;
+    font-size: 20px;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar a:hover{
+        color:#d97c50;
+    }
+
+
+
+.title{
+    display: flex;
+    justify-content:center;
+
+    color: #162c3a;
+    font-size:150px;
+    width:49%;
+    padding:10% 0 20% 20% ;
+}
+
+.footer{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    background-color:#162c3a;
+    padding:10px;
+    width:100%;
+
+}
+
+.footer img{
+    height:1cm;
+    width:1cm;
+}
+
+.fcolor{
+    color:#dba988;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+/* animation */
+.hidden{
+    opacity:0;
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.container-left{
+    background-image:url("/Users/anna/Documents/Website project/resources/images/Untitled design(1).jpg");
+    background-repeat: no-repeat;
+    position:fixed;
+    height:100vh;
+    width:50%;
+    float:left;
+}
+
+
+.container-right{
+    position:relative;
+
+    height:100%;
+    width:49%;
+    padding: 10% 5% 5% 5%;
+
+    float:right;
+    max-width:40%;
+}
+
+
+.project-container{
+    display:grid;
+    grid-gap:2em;
+    justify-content:center;
+}
+
+.project-container > div{
+    border-radius: 12px;
+    border: solid 2px #dba988;
+    padding:3%;
+}
+
+.project-container > div:hover{
+    background-color:#dba988;
+    opacity:0.5;
+}
+
+.project-container p{
+    color:#dba988;
+    font-size:18px;
+    font-weight:200px;
+}
+
+.project-container h2{
+    color:#d97c50;
+    font-size:34px;
+    font-weight:200px;
+}
+
+/* animation */
+.hidden{
+    opacity:0;
+    transition: all 0.7s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+

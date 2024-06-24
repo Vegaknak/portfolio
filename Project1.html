@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Lobit: sending virtual hugs</title>
+        <link rel="icon" type="image/x-icon" href="resources/images/file.png">
+
+		<link rel="stylesheet" href="/Users/anna/Documents/Website project/resources/css/project1.css">
+		<script defer src="app.js"></script>
+</head>
+<body >
+	<nav class="navbar">
+		<ul>
+			<li><a href="/Users/anna/Documents/Website project/index.html">About me</a></li>
+			<li><a href="/Users/anna/Documents/Website project/Portfolio.html">Projects</a></li>
+			<li><a href="/Users/anna/Documents/Website project/Experience.html">Experience</a></li>
+			<li><a href="/Users/anna/Documents/Website project/contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+    <!-- image -->
+    <section class="banner img-container"> 
+    </section>
+
+    <!-- title -->
+    <section class="banner"> 
+        <h1 class="hidden">Lobit: sending virtual hugs</h1> 
+    </section>
+
+    <!-- text -->
+        <p>February 2024</p>
+        <p class="hidden">Core skills: Designing, engineering and evaluating an interactive technology</p>
+        <br/>
+        <br/>
+        <h2 class="hidden">Project Overview</h2>
+        <p class="hidden">With five other students, I designed, built and evaluated a communicative technology called ‘Lobit’, a remotely connected hoodie which simulates social presence by sending and receiving voice messages and digital ‘hugs’ by means of haptic feedback.</p>
+<br/>
+        <p class="hidden">With the objective to create a relatively novel, interactive technology in the theme of ‘enchanted everyday objects’. Our central theme was Interpersonal connection, and we were inspired by the cartoon-series 'Totally Spies', a nostalgic series where the three female protagonists had access to a lifetime supply of enchanted everyday objects. My main roles during the project were first prototyper and second programmer.</p>
+<br/>
+<br/>
+        <h2 class="hidden">Design Phase</h2>
+        <p class="hidden">Having a clear idea of which core principles we want to base our design on, and generate creative ideas from there onward is important. As Lincoln said: “**Give me six hours to chop down a tree and I will spend the first four sharpening the axe.”</p>
+<br/>
+        <p class="hidden">The design phase started by creating a concept map around our theme ‘Interpersonal connection’. Based on the themes within the concept map, we identified a list of design patterns, new insights and then started combining these, to create nine (varying) novel ideas.</p>
+<br/>
+
+        <div class="hidden image">
+            <img src="resources/images/Untitled.png">
+        </div>
+        
+        <p class="hidden">We settled on the design based on novelty and feasibility. Additionally, we conducted a brief user study (n=3) to test the idea and its functionalities, leading us to our design: two remotely connected hoodies, when the act of hugging oneself would send localized heating to the other user. Additionally, users can send and receive direct voice messages to one another. We created more detailed sketches of the design, along with the first wireframes for the app.</p>
+<br/>
+        <p class="hidden">The design leverages the idea of tele-presence, where it's most central to feel like you are in the presence of somebody else, when in reality you're not \cite{draper1998telepresence}. Alongside, we observe a trend where people try to reduce their screen time, as excessive screen time is associated with increased loneliness \cite{anderl2023directly}. An important note is that our design is not meant to \textit{replace} social presence, but rather a more meaningful supplement to digital communication for two long-distance individuals.</p>
+<br/>
+        <div class="hidden image">
+            <img src="resources/images/Untitled 2.png">
+        </div>
+
+        <p class="hidden">Now that we agreed on the idea and on the functionalities/purpose it should have, the rough sketches of the physical design, customer group and journey, we could start creating the Lo-Fi prototype.</p>
+<br/>
+<br/>
+        <h2 class="hidden">Low Fidelity Prototype and User Testing</h2>
+        <p class="hidden">Leveraging an old garment for the Lo-Fi prototype, we used pieces of foam to indicate the placement of the speakers, heating & sensor pads, securing them with double sided tape. This allowed us to move the features around while user-testing. We used clay to for the control buttons, and we created a little display out of Lego and paper along with emoji buttons to resemble the message-screen.</p>
+<br/>
+        <p class="hidden">We gathered data for the sensor placement by asking people to hug themselves. Additionally, we tested app usage, the prototype was tried on and we asked about usability and understanding (n=4). Lastly, general opinions and feelings related to enchantment based on Lange et al. (2022) \cite{lange2022assessing} were asked. The results were critical for our design, and the most important points we learnt were:</p>
+<br/>
+        <ul class="list hidden">
+            <li>- Placement of the sensors should be in places you cannot accidentally hit</li>
+            <li>- The focus of the heating should mimic a hug without being overwhelming, therefore they should be placed on chest and back</li>
+            <li>- Ensure the encasing of the voice message buttons are obvious</li>
+            <li>- Ensure the heating is adjustable</li>
+            <li>- Option to hide emojis</li>
+        </ul>
+
+        <p class="hidden">Regarding the app wireframes, it lead to the changes:</p>
+            <ul class="list hidden">
+                <li>- Add notifications for voice messages received and when other is wearing the hoodie</li>
+                <li>- Improve guidance for setting the device up in the app (Device configuration)</li>
+                <li>- Create separate page for partner and own hoodie</li>
+                <li>- Clarify that the product is for pairing only (no multiple connections)</li>
+            </ul>
+
+<br/>
+        <p class="hidden">Participants reported they expect to feel more in the moment, more connected to their partner, joyful and excited when using the Lobit. These responses led us to feel more confident in the fact that the hoodie suffices the criteria of being enchanted.</p> 
+<br/>
+        <p class="hidden">This was an important point in time as it confirmed our scope before moving forward. We now finalized the Lo-Fi prototype and sowed fabric to indicate the placement of the heating pads, pressure sensor and wiring. We decided to drop the emoji-feature based on feasibility and the fact this feature was only complementary to our goals.</p>
+<br/>
+        <p class="hidden">Lastly, we brainstormed name ideas and decided to call our product 'Lobit', referring to the Surinamese word for Lobi, meaning 'love' (two of our group members are of Surinamese descent). The 't' at the end creates the the word 'bit', a term referring to the technical nature of this project, which can also be retraced to our team name 'Totally Bytes'.</p>
+
+
+<br/>
+<br/>
+
+        <h2 class="hidden">High Fidelity Prototype </h2>
+            <p class="hidden">Most of our electronics arrived this week, leading us to make a concrete implementation plan. Though the conceptual design includes two hoodies, both able to send and receive, time and money constraints led us to agree the creation of two hoodies was not necessary to demonstrate the core functionalities of the prototype.<p>
+            <p class="hidden">We started testing our electronics and soldering the pins to the Arduino. We found the Arduino we initially got difficult to operate, as there was little documentation available on it. We switched to using the Arduino ESP32, where the only adaption was that it required an external power source.<p>
+<br/>
+            <p class="hidden">Immediately after solving one issue, we ran into the next problem; the heating pads we ordered did not heat up fast enough nor hot enough to notice any significant difference; the current heating pads needed 40 minutes to reach 35-50 degrees Celsius, but for our design this heating needs to be instant. We started looking online for alternatives, but none of similar kind were really fast enough. Another alternative to heating pads was using resistance wire directly. Most likely, our heating pads were also embedding some form of resistance wire, but it was clear we would benefit from wiring that was more powerful (i.e., higher resistance).</p>
+<br/>        
+            <p class="hidden">Resistance wiring works as electrical current runs through the length of the wire, resisting the flow of electricity and generates heat as a result of the resistance \cite{scherz2006practical}. We experimented with wiring for floor heating, which were quick to heat up, but when the wiring was moving out of place, the distribution of heat was shifting, resulting in really hot spots, which is very sub-optimal for embedding it in a wearable. Alternatively, we found a polyamide heating foil online, which was designed to wear, therefore suiting our project more.</p>
+<br/>
+            <p class="hidden">In the meanwhile, we configured the communication between the two ESP-32’s. We found Message Queuing Telemetry Transport (MQTT) to be a suitable method for this, as MQTT allows for efficient communication between devices (especially over constrained networks like WiFi \cite{ibm-mqtt-doc}) and supports fully symmetrical connection. The microcontrollers connect to a smartphone hotspot, accessing the MQTT broker hosted on an existing server provided by Utrecht University. This way, the ESP-32’S can publish (send) and subscribe (receive) to specific topics on the broker.</p>
+<br/>
+            <p class="hidden">Unfortunately, the heating pads never arrived, which led us to use a vibration motor for haptic feedback instead. We connected this to a relay module to control its power supply easily.</p>
+<br/>
+            <p class="hidden">And after solving one problem, it's inevitable to run into the next one. The audio module we had was unable to send files to the ESP-32 properly. The module was specifically designed to record and play on a single device, which may explain our difficulties. Regardless, it should have been possible to work around but we considered the small time frame we had and how much time was already spent on this particular issue, which led us to decide to move on. Instead, we settled for using a laptop as intermediary. By connecting the audio module to a laptop, the files could be accessed from there which in turn could be sent to and played on Bluetooth headphones.</p>
+<br/>
+            <div class="hidden image">
+                <img src="resources/images/Untitled 4.png">
+            </div>
+<br/>
+            <p class="hidden">Now that all circuits were finalized, they were transferred onto perfboard, acting as a permanent replacement of a breadboard, which was necessary because we wanted to implement it in a garment and therefore needed to be smaller and more sturdy.</p>
+
+            <div class="hidden vertical-image">
+                <img src="resources/images/Untitled 5.png">
+                <img src="resources/images/Untitled 6.png">
+            </div>
+
+
+
+<br/>
+<br/>
+        <h2 class="hidden">Evaluation</h2>
+        <p>The last step was to examine the overall effectivity and impact of our affective technology Lobit. We were interested to study feelings of enchantment and social presence in comparison to traditional smartphone usage. we employed a mixed-methods approach in a within-subjects design, involving both platonic and romantic partners, to evaluate Lobit's effectiveness in enhancing the communication experience from a distance. We had the following research question(s):</p>
+        <div class="hidden image">
+            <img src="resources/images/Untitled 3.png">
+        </div>
+        <br/>
+        <p>Participants and Procedure</p>
+        <p>We recruited six individuals forming three pairs (one romantic and two platonic) who regularly communicate from a distance. The participants, with an average age of 22 and a relationship duration of approximately 2.3 years, were exposed to two conditions: using Lobit and using smartphones. Each session lasted about an hour, with the order of conditions randomized to control for any order effects.</p>
+        <br/>
+
+        <p>Data Collection and Tools</p>
+        <p>Data was collected through checklists and semi-structured interviews. The Networked Minds Social Presence Questionnaire and an enchantment adjective checklist were used to quantitatively and qualitatively assess the participants' feelings of social presence and enchantment. Voice memos recorded the sessions, and transcription software helped in analyzing the qualitative data.</p>
+        
+        <br/>
+        <p>Results</p>
+        <p>The results showed that Lobit significantly enhanced feelings of social presence and enchantment compared to smartphone communication. The average social presence score was higher in the Lobit condition (15.3) than in the smartphone condition (12.0). Participants felt more connected and attentive to their partners while using Lobit. The enchantment scores were also higher with Lobit, with participants experiencing more positive emotions such as joy and excitement. Interestingly, while Lobit improved perceived social presence and enchantment, inter-subjective symmetry was higher in the smartphone condition, suggesting that actual mutual understanding might be better in conventional communication modes.</p>
+        <br/>
+        <p>The qualitative data supported the quantitative findings, with participants expressing a greater sense of connection and enchantment when using Lobit. The functionalities of sending hugs and voice messages were particularly appreciated, enhancing the emotional quality of the communication. However, some participants noted that the vibration could become annoying over time, and there were concerns about the practicality of heat as a substitute for physical warmth in a hug.</p>
+<br/>
+
+        <p>Design Implications and Future Research</p>
+        <p>Our study highlights the potential of integrating tactile and audio features into communication technologies to enhance emotional connection, especially in long-distance relationships. Future research should focus on refining these features and exploring their long-term impacts on relationship satisfaction.</p>
+        <br/>
+
+        <p>Overall, Lobit offers a promising enhancement to long-distance communication, fostering a stronger sense of social presence and enchantment than traditional text-based methods. The findings suggest that incorporating tangible interactions into communication technologies hold the potential to deepen emotional connections between users, pointing towards the need for more nuanced and emotionally aware technological solutions in our increasingly digital world.</p>
+
+<br/>
+<br/>
+        <h2 class="hidden">Final Thoughts</h2>
+        <p>I was really proud of what we accomplished in such a short time frame. I can confidently say that I have learned a great deal and this project was the most exciting project yet. </p>
+        <br/>
+        <p>Prototyping is generally defined as an experimental process \cite{noauthor_2019-fh}, and I have seen why; it was a process of adaptation, testing out various approaches and designs to adapt to unforeseen issues, and that meant letting go of ideas that weren't always feasible. Now having been through the whole process, I think if I were to do a similar project for a second time we could progress much faster, underlining the importance of having been through this process in the first place. </p>
+        <br/>
+        <p>In the end, I think we could have spent less time on the design and Low-Fi prototyping phase, as the most alterations to the design and functionalities were made during the Hi-Fi prototyping.</p>
+        <br/>
+        <p>Overall, it was awesome we got to bring our ideas into reality. I am proud of what we managed to achieve in such a short time frame, especially considering how little familiarity we had with such a project.</p>
+    </div>
+    <br/>
+    <br/>
+
+
+    <a href="resources/images/ITI-1.pdf" download>
+        <button class="document">View project report here!</button>
+    </a>
+    
+<footer class="footer">
+    <p>
+        <a href="https://www.linkedin.com/in/annadewolff/" target="_blank" class="footer"><img src="./resources/images/linkedin.png" alt=""></a>
+        </p>
+        <p class="fcolor">Website made by Anna de Wolff, february 2023</p>
+</footer>
+
+</body>
+</html>
+    
