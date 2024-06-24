@@ -103,6 +103,20 @@ p {
     font-style: normal;
 }
 
+.project-container > div {
+    border-radius: 12px;
+    border: solid 2px #dba988;
+    padding: 3%;
+    overflow: hidden; /* Ensure any overflowing content is hidden */
+}
+
+.iconimg {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 100%; /* Ensure the image takes up the full height of its container */
+    object-fit: cover; /* Ensures the image covers the available area without distortion */
+    display: block; /* Removes any extra space below the image */
+}
+
 
 /* animation */
 .hidden{
@@ -139,7 +153,7 @@ p {
 
 .project-container{
     display:grid;
-    grid-gap:2em;
+    grid-gap:6em;
     justify-content:center;
 }
 
