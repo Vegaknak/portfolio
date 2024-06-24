@@ -94,15 +94,18 @@ p {
     }
 
     
-.banner{
+.banner {
     display: flex;
     justify-content: center;
-    color: #162c3a ;
-    padding: 70px 70px 70px 70px;
-    /* margin: 90px auto 0 auto; */
-    position:relative;
-    width:100%;
+    align-items: center;
+    color: #162c3a;
+    padding: 70px;
+    width: 100%;
+    position: relative;
+    height: 400px; /* Adjust based on your preference */
+    background-color: #f0f0f0; /* Optional: in case the image doesn't load */
 }
+    
     
 .banner h1{
         font-size:100px;
@@ -110,10 +113,6 @@ p {
         letter-spacing:1;
     }
 
-
-.imgcont {
-    object-fit:cover;
-}
 
 .footer{
     display:flex;
@@ -140,13 +139,19 @@ p {
 }
 
 
-.img-container {
+/* .img-container {
     background-image: url("resources/images/photo-1536440136628-849c177e76a1-min.jpg");
     height: 40%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
     position:relative;
+} */
+
+.banner-image {
+    width: 100%; /* Ensures the image covers the full width of the banner */
+    height: 100%; /* Ensures the image covers the full height of the banner */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
 }
 
 .image{
