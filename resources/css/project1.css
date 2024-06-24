@@ -104,9 +104,16 @@ p {
     position: relative;
     height: 400px; /* Adjust based on your preference */
     background-color: #f0f0f0; /* Optional: in case the image doesn't load */
+    overflow: hidden;
 }
     
-    
+.banner-image {
+    width: 100%; /* Ensures the image covers the full width of the banner */
+    height: 100%; /* Ensures the image covers the full height of the banner */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+}
+
+
 .banner h1{
         font-size:100px;
         min-width:100%;
@@ -147,12 +154,6 @@ p {
     background-size:cover;
     position:relative;
 } */
-
-.banner-image {
-    width: 100%; /* Ensures the image covers the full width of the banner */
-    height: 100%; /* Ensures the image covers the full height of the banner */
-    object-fit: cover; /* Maintains aspect ratio and covers the area */
-}
 
 .image{
     display:flex;
