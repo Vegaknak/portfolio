@@ -18,7 +18,7 @@ font-size:36px;
 
 display: block;
 margin: auto;
-text-align: justify;
+/* text-align: justify; */
 text-justify: inter-word;
 width: 100%;
 max-width: 800px;   
@@ -99,13 +99,14 @@ p {
     justify-content: center;
     align-items: center;
     color: #162c3a;
-    padding: 70px;
+    /* padding: 70px; */
     width: 100%;
     position: relative;
     height: 400px; /* Adjust based on your preference */
     background-color: #f0f0f0; /* Optional: in case the image doesn't load */
     overflow: hidden;
 }
+
     
 .banner-image {
     width: 100%; /* Ensures the image covers the full width of the banner */
@@ -116,7 +117,7 @@ p {
 
 .banner h1{
         font-size:100px;
-        min-width:100%;
+        /* min-width:100%; */
         letter-spacing:1;
     }
 
