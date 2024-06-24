@@ -116,7 +116,7 @@ p {
 }
 
 .container-left{
-    background-image:url("/Users/anna/Documents/Website project/resources/images/Untitled design(1).jpg");
+    background-image:url("resources/images/Untitled design(1).jpg");
     background-repeat: no-repeat;
     position:fixed;
     height:100vh;
