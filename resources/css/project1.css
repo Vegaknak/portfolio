@@ -103,7 +103,7 @@ p {
     width: 100%;
     position: relative;
     height: 400px; /* Adjust based on your preference */
-    background-color: #f0f0f0; /* Optional: in case the image doesn't load */
+    /* background-color: #f0f0f0; Optional: in case the image doesn't load */
     overflow: hidden;
 }
 
