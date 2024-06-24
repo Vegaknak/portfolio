@@ -99,10 +99,10 @@ p {
     justify-content: center;
     color: #162c3a ;
     padding: 70px 70px 70px 70px;
-    margin: 90px auto 0 auto;
+    /* margin: 90px auto 0 auto; */
     position:relative;
+    width:100%;
 }
-
     
 .banner h1{
         font-size:100px;
@@ -111,6 +111,9 @@ p {
     }
 
 
+.imgcont {
+    object-fit:cover;
+}
 
 .footer{
     display:flex;
@@ -150,7 +153,6 @@ p {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
     width: 100%;
     max-width: 600px; 
     margin:auto;
