@@ -65,10 +65,10 @@ p {
 }
 
 .navbar{
-    position:fixed;
+    position:relative;
     top:0;
     width:100%;
-    background-color:#f7f3e8 ;
+    /* background-color:#f7f3e8 ; */
     z-index: 1000;
 }
 

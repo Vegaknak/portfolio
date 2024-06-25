@@ -45,7 +45,7 @@ p {
 
 
 .navbar{
-    position:fixed;
+    position:relative;
     top:0;
     width:100%;
     background-color:#f7f3e8 ;
@@ -81,7 +81,7 @@ p {
     background-color:#162c3a;
     color: #dba988 ;
     padding: 70px 70px 70px 70px;
-    margin: 90px auto 0 auto;
+    /* margin: 90px auto 0 auto; */
 }
 
 .banner-2{

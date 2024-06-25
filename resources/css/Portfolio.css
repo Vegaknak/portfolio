@@ -6,7 +6,7 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-color: #162c3a;
+    background-color: #f7f3e8;
   }
 
 .experience{
@@ -30,12 +30,13 @@ p {
     color: #162c3a; 
     font-size: 18px; 
     line-height: 1.5em;
-    letter-spacing: -1.2;
+    /* letter-spacing: -1.2; */
+    word-spacing:none;
 
     margin: 0 0 24px; 
     text-align: justify; 
     text-justify: inter-word; 
-  }
+}
 
 
 .navbar{
@@ -105,18 +106,17 @@ p {
 
 .project-container > div {
     border-radius: 12px;
-    border: solid 2px #dba988;
+    border: solid 2px #162c3a;
     padding: 3%;
     overflow: hidden; /* Ensure any overflowing content is hidden */
 }
 
-.iconimg {
-    width: 100%; /* Ensure the image takes up the full width of its container */
-    height: 100%; /* Ensure the image takes up the full height of its container */
-    object-fit: cover; /* Ensures the image covers the available area without distortion */
-    display: block; /* Removes any extra space below the image */
-}
-
+/* .iconimg {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+} */
 
 /* animation */
 .hidden{
@@ -130,8 +130,8 @@ p {
 }
 
 .container-left{
-    background-image: url("resources/images/Untitled design(1).jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("resources/images/Untitled design(1).jpg"); */
+    /* background-repeat: no-repeat; */
     position:fixed;
     height:100vh;
     width:50%;
@@ -159,7 +159,7 @@ p {
 
 .project-container > div{
     border-radius: 12px;
-    border: solid 2px #dba988;
+    border: solid 2px #162c3a;
     padding:3%;
 }
 
