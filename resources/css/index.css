@@ -29,7 +29,7 @@ p {
     color: #162c3a;
     font-size: 18px;
     line-height: 1.5em;
-    letter-spacing: -1.2;
+    letter-spacing: -1.2px;
     margin: 0 0 24px;
     text-align: justify;
     text-justify: inter-word;
@@ -63,10 +63,10 @@ p {
     color: #d97c50;
 }
 
-/* whole fkn banner */
+/* Banner */
 .banner {
     display: flex;
-    flex-wrap: wrap; /* Added to handle wrapping on smaller screens */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
     gap: 50px 70px;
     background-color: #162c3a;
     color: #dba988;
@@ -80,18 +80,18 @@ p {
 
 .banner-2 p {
     font-size: 20px;
-    width: 100%; /* Changed for responsiveness */
+    width: 100%; /* Adjusted for responsiveness */
     color: #dba988;
 }
 
 .banner-2 h1 {
     font-size: 150px;
-    width: 100%; /* Changed for responsiveness */
+    width: 100%; /* Adjusted for responsiveness */
 }
 
 .img-container {
     max-width: 100%;
-    width: 100%; /* Changed for responsiveness */
+    width: 100%; /* Adjusted for responsiveness */
     height: auto;
     margin: auto;
     padding: 10px;
@@ -120,12 +120,13 @@ p {
     border: solid 1px #162c3a;
 }
 
-/* stuk onder banner */
+/* Stuk onder banner */
 .hometext {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 1000px; /* Added max-width */
     padding: auto;
     margin: auto;
 }
@@ -163,7 +164,7 @@ p {
 .exptext {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Changed for responsiveness */
+    width: 100%; /* Adjusted for responsiveness */
     max-width: 1200px;
     margin: 10px auto;
     border-radius: 12px;
@@ -193,16 +194,16 @@ p {
 
 .references {
     display: flex;
-    flex-direction: column; /* Changed to column for better stacking on smaller screens */
+    flex-direction: column; /* Adjusted for responsiveness */
     justify-content: center;
     align-items: center;
-    width: 100%; /* Changed for responsiveness */
+    width: 100%; /* Adjusted for responsiveness */
     gap: 40px;
     background-color: #162c3a;
 }
 
 .references div {
-    max-width: 100%; /* Changed for responsiveness */
+    max-width: 100%; /* Adjusted for responsiveness */
 }
 
 .reftitle {
@@ -218,7 +219,7 @@ p {
 .ref {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Changed for responsiveness */
+    width: 100%; /* Adjusted for responsiveness */
     color: #d97c50;
 }
 
@@ -227,7 +228,7 @@ p {
     color: #dba988;
 }
 
-/* accordion */
+/* Accordion */
 .accordion {
     margin: 60px auto;
     width: 100%;
@@ -281,14 +282,14 @@ input[type="checkbox"] {
     padding: 10px 10px 20px;
 }
 
-/* eind accordion */
+/* Eind accordion */
 .deets {
     text-shadow: 5px 5px 2px #162c3a;
     color: #dba988;
     text-align: center;
 }
 
-/* animation */
+/* Animation */
 .hidden {
     opacity: 0;
     transition: all 0.7s;
@@ -333,7 +334,6 @@ input[type="checkbox"] {
 
     .banner-2 p {
         font-size: 16px;
-        width: 100%; /* Adjust for small screens */
     }
 
     .references {
