@@ -155,6 +155,7 @@ p {
     display:grid;
     grid-gap:6em;
     justify-content:center;
+    margin: 0 0 10% 0;
 }
 
 .project-container > div{
@@ -167,10 +168,13 @@ p {
     background-color:#dba988;
     opacity:0.5;
 }
+/* .project-container > h2:hover{
+    color:#f7f3e8;
+} */
 
 .project-container p{
-    color:#dba988;
-    font-size:18px;
+    color:#162c3a;
+    font-size:24px;
     font-weight:200px;
 }
 

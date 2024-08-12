@@ -26,12 +26,13 @@
 <body>
     <!-- navigation bar section -->
     <nav class="navbar">
-        <ul>
-            <li><a href="">About me</a></li>
-            <li><a href="Portfolio.html">Projects</a></li>
-            <li><a href="Experience.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <button class="menu-toggle">Navigation</button>
+            <ul>
+                <li><a href="">About me</a></li>
+                <li><a href="Portfolio.html">Projects</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
     </nav>
 
 
@@ -40,8 +41,8 @@
         <div class="img-container hidden">
             <img id="foto_anna" src="./resources/images/IMG_0138 2-min.jpg" alt="Anna de Wolff">
         </div>
-        <div class="banner-2 hidden">
-            <h1>This is Anna</h1> 
+        <div class="title hidden">
+            <h1>This is Anna.</h1> 
             <p>Welcome to my personal website where I document my projects and much more.</p>
             <a href="#learnmore">
                 <button>Learn more</button>
@@ -50,18 +51,20 @@
     </section>
 
 
-    <section id="learnmore" class="hometext hidden">
-        <h2>About me</h2>
-        <p>My name is Anna, I am a HCI Master student (Human-Computer Interaction). With a background in psychology and a great enthusiasm towards technology, I hope to connect the two through human-centered design. 
-            As an advocate and enthusiast of science, I firmly believe that most decision-making processes can be significantly improved when grounded in data.
-        </p>
-        <p>My friends describe me as artistic, structured, hands-on, determined and ambitious. I have more interests and hobbies than the twenty four hours in the day permit me to have;
-             I play bass guitar in a band and occasionally spin records at house parties. I love to dance, to read, to cook and to be out in nature. Though I am ambitious and hard-working, a healthy work-life balance is important to me and I value my relationships and personal development highly.
-        </p>
-        <h2>About this site</h2>
-        <p>I'm proud to share that I built this website from scratch, without relying on generative AI or website-building tools. This site is hosted using GitHub pages. Visit my github <a href="https://github.com/Vegaknak">here</a>. As this was my first personal project using HTML, CSS and simple scripting using JavaScript,
-            this project has introduced me to the world of web developemnt and UI design. I hope this is the first of many more to come!
-        </p>
+    <section id="learnmore" class="parent-container hidden">
+        <div class="hometext hidden">
+            <h2>About me</h2>
+            <p>My name is Anna, I am a HCI Master student (Human-Computer Interaction). With a background in psychology and a great enthusiasm towards technology, I hope to connect the two through human-centered design. 
+                As an advocate and enthusiast of science, I firmly believe that most decision-making processes can be significantly improved when grounded in data.
+            </p>
+            <p>My friends describe me as artistic, structured, hands-on, determined and ambitious. I have more interests and hobbies than the twenty four hours in the day permit me to have;
+                I play bass guitar in a band and occasionally spin records at house parties. I love to dance, to read, to cook and to be out in nature. Though I am ambitious and hard-working, a healthy work-life balance is important to me and I value my relationships and personal development highly.
+            </p>
+            <h2>About this site</h2>
+            <p>I'm proud to share that I built this website from scratch, without relying on generative AI or website-building tools. This site is hosted using GitHub pages. Visit my github <a href="https://github.com/Vegaknak">here</a>. As this was my first personal project using HTML, CSS and simple scripting using JavaScript,
+                this project has introduced me to the world of web developemnt and UI design. I hope this is the first of many more to come!
+            </p>
+        </div>
     </section>
 
 </body>
@@ -69,8 +72,8 @@
 <footer class="footer">
     <p>
         <a href="https://www.linkedin.com/in/annadewolff/" target="_blank" class="footer"><img src="./resources/images/linkedin.png" alt=""></a>
-      </p>
-    <p class="fcolor">Website made by Anna de Wolff, february 2023</p>
+    </p>
+    <p class="fcolor">Anna de Wolff, february 2023</p>
 </footer>
 
 </html>

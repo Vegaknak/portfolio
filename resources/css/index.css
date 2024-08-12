@@ -19,14 +19,19 @@ body {
     background-color:#162c3a;
 }
 
-  h1, h2, label{
-    font-family: "Yeseva One", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing:-1.4px;
-    font-size:36px;
-    }
+h1, h2, label{
+font-family: "Yeseva One", serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing:-1.4px;
+font-size:36px;
+}
 
+h1 {
+    font-size:150px
+}
+
+    
 p {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
@@ -38,7 +43,7 @@ p {
     line-height: 1.5em;
     letter-spacing: -1.2;
 
-    margin: 0 0 24px; 
+    /* margin: 0 0 24px;  */
     text-align: justify; 
     text-justify: inter-word; 
   }
@@ -54,10 +59,14 @@ p {
 
 .navbar li{
     display:inline-block;
-    padding: 30px 20px;
+    padding: 3%;
 }
 
-.navbar a {
+.navbar ul {
+    margin:0;
+}
+
+.navbar a, .menu-toggle  {
     text-decoration:none;
     color:black;
     padding:14px 16px;
@@ -69,43 +78,129 @@ p {
     font-style: normal;
 }
 
+
 .navbar a:hover{
         color:#d97c50;
     }
+
+.menu-toggle:hover{
+    color:#162c3a;
+}
+
+    
+/* Button to toggle the menu */
+.menu-toggle {
+    display: none; 
+    background-color:#f7f3e8;
+    color:#D97C50;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-align:center;
+}
+
+/* Media query for navigation bar */
+@media (max-width: 600px) {
+    .navbar {
+        /* Stacks elements vertically */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .menu-toggle {
+        display: block; 
+        margin: 14px 10px; 
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%; 
+        text-align: left; 
+        display: block; 
+    }
+
+    /* When the 'show' class is added to the navbar, show menu */
+    .navbar.show ul {
+        display: flex; 
+    }
+}
     
 
 /* whole fkn banner */
 .banner{ 
     display: flex;
-    gap: 50px 70px;
-    background-color:#162c3a;
-    color: #dba988 ;
-    padding: 70px 70px 70px 70px;
-    /* margin: 90px auto 0 auto; */
+    justify-content:space-between;
+    align-items:center;
+    background-color:#f7f3e8;
+    color: #D97C50 ;
+    padding:0 5%;
 }
 
-.banner-2{
+.title{
     flex-direction:column;
-    padding: 100px 50px 100px 100px;
+    text-align:center;
 }
 
-.banner-2 p {
+.title, .img-container  {
+    width: 48%; /* Each banner takes up about half the container width */
+    /* Additional styles for your banners */
+}
+ 
+.title p {
     font-size:20px;
-    width:500px;
-    color:#dba988;
+    /* width:45%; */
+    color:#D97C50;
+    text-align:center;
 }
 
-.banner-2 h1{
-    font-size:150px;
-    width:600px;
+.title h1{
+    /* width:600px; */
+    text-align:center;
+    flex-wrap:wrap;
+}
+
+@media (max-width: 600px) {
+    .title h1 {
+        font-size: 2em;  /* Adjust this value to fit the text to the screen */
+        width: 100%;     /* Ensures the width adapts to the screen size */
+        text-align: center;
+        padding: 0 10px; /* Optional: Add some padding for better spacing */
+    }
+
+    .hometext {
+        /* font-size: 2em;  Adjust this value to fit the text to the screen */
+        width: 80% !important;;     /* Ensures the width adapts to the screen size */
+        padding: 0 10px;
+    }
+}
+
+/* Media query for content */
+@media (max-width: 600px) {
+    .banner {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;    /* Center items horizontally */
+    }
+
+    .img-container,
+    .title {
+        width: 100%;           /* Each banner takes full width */
+        margin-bottom: 20px;   /* Optional: Add space between banners */
+    }
 }
 
 .img-container {
-    max-width:100%;
-    width:600px;
+    /* max-width:100%; */
+    /* width:600px; */
     height:auto;
     margin: auto; 
-    padding: 10px; 
+    padding: 0 0 10px 0; 
     text-align: center;
   }
 
@@ -113,34 +208,41 @@ p {
     max-width: 100%;
     height:auto;
     display:block;
+    border-radius:5px;
 }
 
-.banner-2 button{
-    background-color:#162c3a;
-    color:#dba988;
+.title button{
+    background-color:#f7f3e8;
+    color:#D97C50;
     border-radius: 12px;
-    border: solid 1px #dba988;
+    border: solid 1px #D97C50;
     cursor: pointer;
     padding: 10px 15px;
+    text-align:center;
 }
 
-.banner-2 button:hover{
+.title button:hover{
     background-color:#dba988;
-    color:#162c3a;
+    color:#f7f3e8;
     border-radius: 12px;
-    border: solid 1px #162c3a;
+    border: solid 1px #f7f3e8;
 }
 
 
-/* stuk onder banner */
+/* tekst onder banner */
+.parent-container{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    align-items: center;
+}
+
 .hometext{
     display:flex;
     flex-direction:column;
     align-items:flex-start;
-    width:1000px;
-    height:1000px;
+    width:49%;
     padding:auto;
-
     margin:auto;
 }
 
@@ -151,14 +253,13 @@ p {
     justify-content:center;
     align-items:center;
     background-color:#162c3a;
-    padding:10px;
-                width:100%;
-
+    padding:1%;
+    width:100%;
 }
 
 .footer img{
-    height:1cm;
-    width:1cm;
+    height: 20px;
+    width:20px;
 }
 
 .fcolor{
@@ -169,7 +270,7 @@ p {
     font-style: normal;
 }
 
-/* Experience page */
+/* Experience page (nog eigen css file voor maken)*/
 
 .banner-3{
     padding: 2%;
