@@ -235,6 +235,7 @@ p {
     flex-direction:column;
     width:100%;
     align-items: center;
+    margin: 10% 0 10% 0;
 }
 
 .hometext{
