@@ -18,7 +18,6 @@ font-size:36px;
 
 display: block;
 margin: auto;
-/* text-align: justify; */
 text-justify: inter-word;
 width: 100%;
 max-width: 800px;   
@@ -45,16 +44,6 @@ p {
     margin: auto; 
 }
 
-/* Center container for the lists */
-.centered-container {
-    width: 100%;
-    max-width: 800px; /* Set the maximum width for the container */
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 0;
-    text-align: center; /* Centers the list items */
-}
-
-
 .list li{
     font-family: "Josefin Sans", sans-serif;
     font-weight: 200;
@@ -78,8 +67,6 @@ p {
     font-style:italic;
     font-size:90%;
 }
-
-
 
 .navbar{
     position:relative;
@@ -160,16 +147,6 @@ p {
     font-style: normal;
 }
 
-
-/* .img-container {
-    background-image: url("resources/images/photo-1536440136628-849c177e76a1-min.jpg");
-    height: 40%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position:relative;
-} */
-
 .image{
     display:flex;
     justify-content: space-between;
@@ -227,9 +204,7 @@ a[href$=".pdf"] button:hover {
     color: #f7f3e8;
 }
 
-/* .subtext{
-    color:#3d789d;
-} */
+
 
 
 /* animation */
