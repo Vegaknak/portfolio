@@ -3,7 +3,6 @@ background: 162c3a (dark blue)
 ephasised headings: d97c50 (dark orange)
 headers and text: dba988 (soft orange)*/
 
-
 html{
     scroll-behavior:smooth;
   }
@@ -149,8 +148,7 @@ p {
 }
 
 .title, .img-container  {
-    width: 48%; /* Each banner takes up about half the container width */
-    /* Additional styles for your banners */
+    width: 48%; /* let each banner take up half of container width */
 }
  
 .title p {
@@ -168,15 +166,15 @@ p {
 
 @media (max-width: 600px) {
     .title h1 {
-        font-size: 2em;  /* Adjust this value to fit the text to the screen */
-        width: 100%;     /* Ensures the width adapts to the screen size */
+        font-size: 2em;  
+        width: 100%;    
         text-align: center;
-        padding: 0 10px; /* Optional: Add some padding for better spacing */
+        padding: 0 10px; 
     }
 
     .hometext {
-        /* font-size: 2em;  Adjust this value to fit the text to the screen */
-        width: 80% !important;;     /* Ensures the width adapts to the screen size */
+        /* font-size: 2em; */
+        width: 80% !important; /* ensures the width adapts to the screen size */
         padding: 0 10px;
     }
 }
@@ -184,14 +182,14 @@ p {
 /* Media query for content */
 @media (max-width: 600px) {
     .banner {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;    /* Center items horizontally */
+        flex-direction: column; /* stack items vertically */
+        align-items: center;    
     }
 
     .img-container,
     .title {
-        width: 100%;           /* Each banner takes full width */
-        margin-bottom: 20px;   /* Optional: Add space between banners */
+        width: 100%;           
+        margin-bottom: 20px;   
     }
 }
 

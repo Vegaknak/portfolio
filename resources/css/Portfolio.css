@@ -40,7 +40,7 @@ p {
 
 
 .navbar{
-    position:fixed;
+    position:fixed; /* so that the body appears to scroll t*/
     top:0;
     width:100%;
     background-color:#f7f3e8 ;
@@ -49,10 +49,10 @@ p {
 
 .navbar li{
     display:inline-block;
-    padding: 30px 20px;
+    padding: 3%;
 }
 
-.navbar a {
+/* .navbar a {
     text-decoration:none;
     color:black;
     padding:14px 16px;
@@ -62,13 +62,13 @@ p {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-}
+} */
 
 .navbar a:hover{
         color:#d97c50;
     }
 
-
+   
 .title{
     display: flex;
     justify-content:center;
@@ -107,15 +107,8 @@ p {
     border-radius: 12px;
     border: solid 2px #162c3a;
     padding: 3%;
-    overflow: hidden; /* Ensure any overflowing content is hidden */
+    overflow: hidden; 
 }
-
-/* .iconimg {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    display: block; 
-} */
 
 /* animation */
 .hidden{
@@ -129,12 +122,16 @@ p {
 }
 
 .container-left{
-    /* background-image: url("resources/images/Untitled design(1).jpg"); */
-    /* background-repeat: no-repeat; */
+    /* background-image: url("resources/images/Untitled design(1).jpg");
+    background-repeat: no-repeat; */
     position:fixed;
     height:100vh;
     width:50%;
     float:left;
+}
+
+.container-left h1 {
+    margin: 5%;
 }
 
 
@@ -160,7 +157,9 @@ p {
 .project-container > div{
     border-radius: 12px;
     border: solid 2px #162c3a;
-    padding:3%;
+    width: 100%;  
+    padding: 2%;  
+    margin: 0 0 1em 0;  
 }
 
 .project-container > div:hover{
@@ -174,13 +173,13 @@ p {
 .project-container p{
     color:#162c3a;
     font-size:24px;
-    font-weight:200px;
+    font-weight:200;
 }
 
 .project-container h2{
     color:#d97c50;
     font-size:34px;
-    font-weight:200px;
+    font-weight:200;
 }
 
 /* animation */
@@ -193,4 +192,136 @@ p {
     opacity: 1;
     transform: translateX(0);
 }
+
+
+/* media queries & other adjustments for small screens */
+
+/* Button to toggle the menu */
+.navbar a, .menu-toggle  {
+    text-decoration:none;
+    color:black;
+    padding:14px 16px;
+    font-size: 20px;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.navbar a:hover{
+        color:#d97c50;
+    }
+
+.menu-toggle:hover{
+    color:#162c3a;
+}
+
+.menu-toggle {
+    display: none; 
+    background-color:#f7f3e8;
+    color:#D97C50;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-align:center;
+}
+
+
+ /* navigation bar */
+ @media (max-width: 600px) {
+    .navbar {
+        /* Stacks elements vertically */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .menu-toggle {
+        display: block; 
+        margin: 14px 10px; 
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%; 
+        text-align: left; 
+        display: block; 
+    }
+
+    /* When the 'show' class is added to the navbar, show menu */
+    .navbar.show ul {
+        display: flex; 
+    }
+}
+
+
+/* content adaptation */
+
+@media (max-width: 768px) {
+    .container-left,
+    .container-right {
+        width: 100%;   
+        float: none;   
+        position: relative; /* stack vertically */
+        padding: 5%;  
+    }
+
+    .container-left {
+        height: auto; 
+        background-image: none; 
+    }
+
+    .container-right {
+        padding: 5% 5% 10% 5%;  
+        max-width: 100%; 
+    }
+
+    .title {
+        font-size: 40px;  
+        width: 100%;     
+        padding: 5% 0 10% 0; 
+        text-align: center;  
+        word-wrap: break-word; /* break words to prevent overflow */
+        margin: 0; /*  no default margin */
+    }
+
+    /* adjustments for smaller text inside containers */
+    .project-container h2 {
+        font-size: 24px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .project-container p {
+        font-size: 16px; 
+        text-align: center; 
+        margin: 0 0 1em 0; 
+    }
+
+    .container-left h1 {
+        margin: 0; 
+    }
+    
+    .project-container {
+        grid-gap: 1em;
+        width: 85%;  
+        padding: 0; 
+        margin: 0 auto; 
+    }
+
+    .project-container > div {
+        width: 100%;  
+        padding: 2%;  
+        margin: 0 0 1em 0;  
+    }
+}
+
 
