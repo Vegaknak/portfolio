@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Lobit: sending virtual hugs</title>
+        <link rel="icon" type="image/x-icon" href="./resources/images/file.png">
+
+		<link rel="stylesheet" href="./resources/css/project1.css">
+		<script defer src="app.js"></script>
+</head>
+<body >
+    <!-- navigation bar section -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">About me</a></li>
+            <li><a href="Portfolio.html">Projects</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- image -->
+    <section class="banner"> 
+    <img src= '/Users/anna/Documents/Code/Website GitHub/portfolio/resources/images/nastya-dulhiier-OKOOGO578eo-unsplash.jpg' alt= 'banner' class = 'banner-image' >
+    </section>
+
+    <!-- title -->
+   <section class="banner">
+        <h1 class="hidden">Fake review detection using AI</h1>
+    </section>
+ 
+ 
+    <!-- text -->
+        <p class="hidden subtext">November 2024</p>
+        <p class="hidden subtext">Core skills: Machine Learning, Classification, Cross-validation.</p>
+<br/>
+<br/>
+        <h2 class="hidden">Introduction</h2>
+        <p class="hidden">Opinion spam,
+            characterized by the presence of fake reviews designed to deceive readers, has become an issue with
+            the rise of online platforms like TripAdvisor and
+            Yelp, which have been increasingly used by businesses to influence customer perception. This project specifically targets the classification of negative reviews,
+            as these reviews often carry notable weight in consumer decision-making and have been shown to
+            impact brand reputations considerably when left
+            unchecked [8; 9]. Our analysis uses several machine learning classification models, each executing the same task; spam detection. The employed models can be categorized into linear classifiers: Multinomial Naive Bayes (Generative) and Logistic Regression with Lasso Penalty
+            (Discriminative). On the other hand, we have non-linear classifiers: Classification Trees and Random
+            Forests (Ensemble of classifiers)</p>
+<br/>
+        <h2 class="hidden">Data and pre-processing</h2>
+        <p class="hidden">The dataset is structured into five folds, an arrangement that facilitates the training and testing of classification models. Folds 1 through 4, comprising
+            640 reviews, are used for training and hyperparameter tuning. Fold 5, containing 160 reviews,
+            is reserved for testing and evaluating the models.
+            For the training phase, cross-validation is utilised
+            to optimise hyperparameters and improve generalisation capabilities. Cross-validation enables the
+            model to learn patterns across different subsets of
+            data, thereby reducing overfitting and providing a
+            more reliable estimate of model performance on
+            new data. The models' hyperparameter were tuned using grid-search.</p>
+        <br/>
+        <p class="hidden">The data was pre-processed by tokenizing and lemmatizing of the text, removing stopwords, and TF-IDF vectorisation. Taking these measures contributes to a more clean,
+            interpretable and structured input for our models.
+            Irrelevant and redundant information is reduced,
+            while preserving essential linguistic characteristics
+            that point to deceptive and truthful content </p>
+<br/>
+        <p>Additionally, Cochran's Q test and the McNemar's test were used to test statistical significance of the differences in accuracy between models</p>
+<br/>
+        <h2 class="hidden">Discussion</h2> 
+        <p class="hidden">Firstly, the accuracy of the generative linear model 
+            (Multinomial Naive Bayes) did not significantly differ from the 
+            discriminative linear model (Logistic Regression with Lasso Penalty),
+            for neither unigrams nor bigrams. According to our results, the  
+            Logistic regression got an accuracy of 84\% while Naive Bayes model 
+            yielded an accuracy of 83\% (both unigrams). With bigrams, Naive 
+            Bayes outperformed Logistic regression. According to previous findings, 
+            logistic regression has a tendency to achieve higher accuracy in cases 
+            with non-independent features, in for example text classification 
+            \cite{pranckevivcius2017comparison}. Our results did not corroborate this.
+            A lack of a significant difference may be due to the fact that our dataset 
+            was relatively limited and text data is known for its sparse features, 
+            and may not provide enough variance to highlight differences between the models. 
+            Additionally, regularisation of the Logistic regression may have constrained 
+            the parameters, essentially simplifying the model. Overall, the models all performed 
+            comparibly well.
+<br/>
+<br/>
+            Next, there was no systematic performance improvement seen from non-linear 
+            classifiers. The random forest with unigrams did perfom marginally better, 
+            though this difference was insignificant. 
+            This slight advantage may be explained by the fact that random forests have 
+            the ability to generalize from complex, non-linear patterns in high-dimensional 
+            data while avoiding overfitting. This contrasts starkly to the classification tree, 
+            which consistently underperformed. The McNemar results confirm that the classification 
+            tree had a significant lower accuracy compared to all other models, for unigram and 
+            bigram models. Decision Trees, despite their ability to also capture non-linear 
+            relationships, may have been fit to noise in the training data rather than the 
+            underlying distribution \cite{song2015decision}. 
+            This notion underscores why the aggregation of multiple trees in the 
+            Random Forest model allowed for a more nuanced representation of 
+            feature importance. Overall, Naive Bayes and Random Forest were the
+            best performing models across all metrics. Logistic regression performed 
+            moderately well, as the logistic regression with unigrams performed 
+            significantly better than random forests with unigrams.</p>
+<br/>
+<br/>
+            <p class="hidden">Below, an overview of the model metrics is shown.</p>
+<br/>
+
+<div class="hidden image ittext">
+    <img src="/Users/anna/Documents/Code/Website GitHub/portfolio/resources/images/table4.png" alt="model metrics table">
+</div>
+
+        <p class="hidden">The addition of bigram features generally enhanced
+            performance for models that struggled with word
+            context, such as Naive Bayes and Random Forests.
+            Specifically, the Naive Bayes demonstrated an improved performance with bigram features, altough
+            insignificant. Perhaps, the Naive Bayes model benefits from the additional contextual information pro-
+            vided by bigrams, enabling it to better distinguish
+            between truthful and deceptive language patterns.
+            Only for the random forests the addition of bigrams
+            decreased accuracy. Therefore, the use of bigrams varies depending on the
+            classifier’s inherent strengths in handling contextual information.</p>
+
+ <br/>
+
+
+
+ 
+  <br/>
+ 
+ 
+
+    </div>
+    <br/>
+    <a href="/Users/anna/Documents/Code/Website GitHub/portfolio/resources/images/INFOM___Assignment_2.pdf">
+        <button class="document">View project report here!</button>
+    </a>
+
+<footer class="footer">
+    <p>
+        <a href="https://www.linkedin.com/in/annadewolff/" target="_blank" class="footer"><img src="./resources/images/linkedin.png" alt=""></a>
+        </p>
+        <p class="fcolor">Website made by Anna de Wolff, february 2023</p>
+</footer>
+
+</body>
+</html>
