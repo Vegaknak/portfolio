@@ -1,0 +1,333 @@
+/* Experience page (nog eigen css file voor maken)*/
+html{
+    scroll-behavior:smooth;
+  }
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f3e8;
+  }
+
+.experience{
+    background-color:#162c3a;
+}
+
+h1, h2, label{
+font-family: "Yeseva One", serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing:-1.4px;
+font-size:36px;
+}
+
+h1 {
+    font-size:100px
+}
+
+    
+p {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    color: #162c3a; 
+    font-size: 18px; 
+    line-height: 1.5em;
+    letter-spacing: -1.2;
+
+    /* margin: 0 0 24px;  */
+    /* text-align: justify; 
+    text-justify: inter-word;  */
+  }
+
+
+.navbar{
+    position:relative;
+    top:0;
+    width:100%;
+    background-color:#f7f3e8 ;
+    z-index: 1000;
+}
+
+.navbar li{
+    display:inline-block;
+    padding: 3%;
+}
+
+.navbar ul {
+    margin:0;
+}
+
+.navbar a, .menu-toggle  {
+    text-decoration:none;
+    color:black;
+    padding:14px 16px;
+    font-size: 20px;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.navbar a:hover{
+        color:#d97c50;
+    }
+
+.menu-toggle:hover{
+    color:#162c3a;
+}
+
+    
+/* Button to toggle the menu */
+.menu-toggle {
+    display: none; 
+    background-color:#f7f3e8;
+    color:#D97C50;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-align:center;
+}
+
+/* Media query for navigation bar */
+@media (max-width: 600px) {
+    .navbar {
+        /* Stacks elements vertically */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .menu-toggle {
+        display: block; 
+        margin: 14px 10px; 
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%; 
+        text-align: left; 
+        display: block; 
+    }
+
+    /* When the 'show' class is added to the navbar, show menu */
+    .navbar.show ul {
+        display: flex; 
+    }
+}
+
+.banner-3{
+    padding: 2%;
+    margin:auto;
+    color:#162c3a;
+}
+
+
+.exptext{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    max-width:1200px;
+    margin: 10px auto;
+    border-radius: 12px;
+    padding: 50px 15px;
+    /* position:relative; */
+    border: white;
+}
+
+.exptext h1{
+    font-size:28px;
+}
+
+.exptext::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px; 
+    height: 100%;
+    width: 1px; 
+    background-color: #f7f3e8;  /* keep this white */
+    border-radius: 12px 0 0 12px; 
+}
+
+.ex {
+    color: #d97c50;
+    font-size:18px;
+}
+
+.references {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:flex-start;
+    min-width:60%;
+    gap: 40px;
+
+    background-color:#162c3a;
+}
+
+.references div{
+    max-width:600px;
+}
+
+.reftitle{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    font-size:44px;
+    color:#d97c50;
+}
+
+.ref {
+    display:flex;
+    flex-direction:column;
+    width: 70%;
+    max-width:auto;
+    color:#d97c50;
+}
+
+.reftext{
+    font-style: italic;
+    color:#dba988;
+}
+
+/* accordion */
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    background-color:#162c3a;
+    padding:0;
+}
+
+.accordion li{
+    list-style: none;
+    width:100%;
+    margin:auto;
+    padding:10px;
+}
+
+
+.accordion li label{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    /* font-size: 44px; */
+
+    cursor:pointer;
+    color:#f7f3e8;
+}
+
+.accordion li label:hover{
+    color:#d97c50;
+}
+
+label::before{
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.accordion .content{
+    position:relative;
+    padding:0 10px;
+    line-height:26px;
+    max-height:0;
+    overflow:hidden;
+    transition: max-height 0.5s, padding 0.5s ;
+    color:#d97c50;
+}
+
+.accordion input[type="checkbox"]:checked + label + .content{
+    max-height: 1700px;
+    padding: 10px 10px 20px;
+}
+
+/* eind accordion */
+.deets{
+    text-shadow:5px 5px 2px #162c3a;
+    color:#dba988;
+    text-align:center;
+}
+
+/* animation */
+.hidden{
+    opacity:0;
+    transition: all 0.7s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.footer{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    background-color:#162c3a;
+    padding:1%;
+    width:100%;
+}
+
+.footer img{
+    height: 20px;
+    width:20px;
+}
+
+.fcolor{
+    color:#dba988;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* media query for headers */
+@media (max-width: 600px) {
+    .title h1 {
+        font-size: 2em;  
+        width: 100%;    
+        text-align: center;
+        padding: 0 10px; 
+    }
+
+    .exptext {
+        width: 80% !important;
+        padding: 0 10px;
+        word-spacing:normal;
+        background-color: none;
+    }
+
+    .references {
+        flex-direction: column; /* stack items vertically */
+        align-items: center;    
+    }
+
+    .ref {
+        width: 100% !important;
+        padding: 0 10px;
+        word-spacing:normal;
+    }
+
+
+
+}
