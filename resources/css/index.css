@@ -38,13 +38,13 @@ p {
     font-style: normal;
 
     color: #162c3a; 
-    font-size: 18px; 
+    font-size: 24px; 
     line-height: 1.5em;
     letter-spacing: -1.2;
 
     /* margin: 0 0 24px;  */
-    text-align: justify; 
-    text-justify: inter-word; 
+    /* text-align: justify;  */
+    /* text-justify: inter-word;  */
   }
 
 
@@ -152,7 +152,7 @@ p {
 }
  
 .title p {
-    font-size:20px;
+    font-size:24px;
     /* width:45%; */
     color:#D97C50;
     text-align:center;
@@ -175,6 +175,10 @@ p {
     .hometext {
         width: 80% !important;
         padding: 0 10px;
+    }
+
+    .hometext p {
+        font-size: 18px;
     }
 }
 
@@ -251,13 +255,18 @@ p {
     justify-content:center;
     align-items:center;
     background-color:#162c3a;
-    padding:1%;
+    /* padding:1%; */
     width:100%;
+}
+
+.footer p{
+    font-size: 14px;
 }
 
 .footer img{
     height: 20px;
-    width:20px;
+    width: 20px;
+    margin: 0 10px;
 }
 
 .fcolor{
