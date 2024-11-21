@@ -174,22 +174,25 @@ p {
     min-width:60%;
     gap: 40px;
 
-    background-color:#162c3a;
+    border: 2px solid #f7f3e8;
+    padding:2%;
 }
 
 .references div{
     max-width:600px;
 }
 
+
 .reftitle{
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:left;
     align-items:center;
     width:100%;
     font-size:44px;
-    color:#d97c50;
+    color:#f7f3e8;
 }
+
 
 .ref {
     display:flex;
@@ -203,6 +206,7 @@ p {
     font-style: italic;
     color:#dba988;
 }
+
 
 /* accordion */
 .accordion{
