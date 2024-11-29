@@ -34,7 +34,7 @@ p {
     font-style: normal;
 
     color: #162c3a; 
-    font-size: 18px; 
+    font-size: 24px; 
     line-height: 1.5em;
     letter-spacing: -1.2;
 
@@ -163,7 +163,7 @@ p {
 
 .ex {
     color: #d97c50;
-    font-size:18px;
+    font-size:24px;
 }
 
 .references {
@@ -260,7 +260,7 @@ input[type="checkbox"]{
 }
 
 .accordion input[type="checkbox"]:checked + label + .content{
-    max-height: 1700px;
+    max-height: 100%;
     padding: 10px 10px 20px;
 }
 
