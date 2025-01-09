@@ -23,7 +23,18 @@ width: 100%;
 max-width: 800px;   
 }
 
-
+h3{
+    font-family: "Yeseva One", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:20px;
+    
+    display: block;
+    margin: auto;
+    text-justify: inter-word;
+    width: 100%;
+    max-width: 800px;   
+    }
 
 p {
     font-family: "Josefin Sans", sans-serif;
@@ -204,7 +215,20 @@ a[href$=".pdf"] button:hover {
     color: #f7f3e8;
 }
 
-
+.content .styled-list {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #162c3a;
+    margin: 0 0 24px;
+    text-align: justify;
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+    display: block;
+    margin: auto;
+}
 
 
 /* animation */

@@ -1,0 +1,185 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Fake Review Detection Using AI</title>
+        <link rel="icon" type="image/x-icon" href="./resources/images/file.png">
+
+		<link rel="stylesheet" href="./resources/css/project1.css">
+		<script defer src="app.js"></script>
+
+        <!-- Prism.js CSS for python syntax -->
+        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet"/>
+
+        <!-- Prism.js library -->
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+
+</head>
+<body >
+    <!-- navigation bar section -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">About me</a></li>
+            <li><a href="Portfolio.html">Projects</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- image -->
+    <section class="banner"> 
+    <img src= 'resources/images/background2.jpg' alt= 'banner' class = 'banner-image' >
+    </section>
+
+    <!-- title -->
+   <section class="banner">
+        <h1 class="hidden">Bug prediction using decision trees, random forests and classifiers.</h1>
+    </section>
+ 
+ 
+    <!-- text -->
+        <p class="hidden subtext">November 2024</p>
+        <p class="hidden subtext">Core skills: Data mining, Decision Trees, Machine Learning</p>
+<br/>
+<br/>
+
+
+<section>
+    <h2 class="hidden">Overview</h2>
+    <p class="hidden">
+        In this project, we explored the implementation and evaluation of classification models, including 
+        decision trees, bagging, and random forests. We implemented these algorithms using Python, and subsequently analyzed
+        the Eclipse bug dataset for software bug prediction. 
+    </p>
+    <p>
+        The project consisted of two parts: programming and data analysis. In the programming segment, 
+        key functions were implemented to construct and utilize classification trees and ensemble methods. 
+        During analysis, we apply these functions to a real-world dataset to extract insights and 
+        evaluate model performance.
+    </p>
+</section>
+<br/>
+<section>
+    <h2 class="hidden">Part 1: Programming</h2>
+    <p class="hidden">
+        For the first phase, we implemented modular functions to construct classification trees 
+        and build ensemble models, in this case bagging and random forests. We designed the functions in such a way that offered 
+        flexibility, allowing different parameters for different use cases.
+    </p>
+<br/>
+    <h3 class="hidden">Key Functionalities</h3>
+    <ul class="content hidden">
+        <li class="styled-list">
+            <strong>Tree Construction:</strong> The <code>tree_grow</code> function creates a decision tree using 
+            the Gini index to evaluate split quality.
+        </li>
+        <li class="styled-list">
+            <strong>Prediction:</strong> The <code>tree_pred</code> function predicts class labels for new data 
+            based on the constructed tree.
+        </li>
+        <li class="styled-list">
+            <strong>Bagging:</strong> The <code>tree_grow_b</code> function builds an ensemble of trees on 
+            bootstrap samples, while <code>tree_pred_b</code> aggregates predictions using majority voting.
+        </li>
+        <li class="styled-list">
+            <strong>Random Forests:</strong> The implementation incorporates feature subsetting, selecting a 
+            random subset of predictors at each split to enhance model diversity.
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2 class="hidden">Part 2: Data Analysis</h2>
+    <p class="hidden">
+        We used the Eclipse bug dataset to test the implemented models. The dataset included software 
+        metrics and bug information at the package level, with the goal of predicting whether a package 
+        has post-release bugs. Training data was drawn from Eclipse release 2.0, while release 3.0 served 
+        as the test set.
+    </p>
+<br/>
+    <h3 class="hidden">Analytical Approach</h3>
+    <ul class="content hidden">
+        <li class="styled-list">
+            A single classification tree was trained using parameters chosen to balance performance and interpretability.
+        </li>
+        <li class="styled-list">
+            Bagging was applied to create an ensemble of trees, improving robustness against overfitting.
+        </li>
+        <li class="styled-list">
+            A random forest model was built, leveraging feature subsetting to enhance generalization.
+        </li>
+    </ul>
+    
+    </ul>
+    <p class="hidden">
+        Key metrics such as accuracy, precision, and recall were used to evaluate model performance. 
+        Statistical testing was conducted to assess the significance of observed differences between 
+        model results.
+    </p>
+<br/>
+<br/>
+<pre><code class="language-python">
+    def greet(name):
+        print(f"Hello, {name}!")
+    
+    greet("Anna")
+        </code></pre>
+
+
+    <h2>Results and discussion</h2>
+    <p>The Random Forest model outperformed the Single Classification 
+        Tree and Bagging models in terms of overall performance. 
+        This was in line with expectations, as Random Forest is an 
+        ensemble method that aggregates the results of multiple 
+        decision trees, each trained on a random subset of the data. 
+        This reduces variance and overfitting, leading to improved 
+        generalization and a stronger ability to balance precision 
+        and recall.
+        While Bagging shows higher precision, its lower recall than 
+        Random Forest suggests it may not capture as many defect cases.
+        To properly test if these differences in precision and recall 
+        are significant, an additional ANOVA and Tukey test would need 
+        to be done for these metrics.</p>
+<br/>
+<br/>
+        <p>In contrast, the Single Classification Tree model struggled to maintain a balance between precision and recall, missing a significant number of defect cases.</p>
+<br/>
+<br/>
+        <p>As seen in the figure below, we created a visualisation that shows the first splits in the single tree model.  
+         In the first leaf node <strong>NSM max</strong>, we see 
+        that software that has a low number of sub-modules, indicating
+        the code is less complex, is reasonably classified as 'no bugs'. 
+         In the second leaf <strong>VG max</strong>, the majority of cases are 
+         classified as 'bugs'. This classification is also reasonable in 
+         line with the notion that complex software is more prone to error.
+          The third leaf <strong>NBD sum</strong> classifies software with 
+          a moderate sum of block depth as containing bugs. This seems 
+          intuitive as well, considering that nesting code brings higher 
+          complexity. Lastly, the fourth leaf <strong>pre</strong> classifies
+           the software as containing bugs when the number of pre-release 
+           bugs is relatively high (but ≤ 11.5). Overall, given the 
+           attributes involved, the classification rules seem reasonable 
+           and align with general expectations of software complexity.</p>
+<br>
+           <div class="hidden image ittext">
+    <img src="resources/images/split_img.jpeg" alt="first-splits">
+    <p class="hidden">Figure: First three splits in the single decision tree model</p>
+</div>
+<br/>
+<br/>
+ 
+ 
+
+<br/>
+    <a href="resources/pdfs/Data_mining_Assignment_1.pdf">
+        <button class="document">View project report here!</button>
+    </a>
+
+<footer class="footer">
+    <p>
+        <a href="https://www.linkedin.com/in/annadewolff/" target="_blank" class="footer"><img src="./resources/images/linkedin.png" alt=""></a>
+        </p>
+        <p class="fcolor">Website made by Anna de Wolff, february 2023</p>
+</footer>
+
+</body>
+</html>
