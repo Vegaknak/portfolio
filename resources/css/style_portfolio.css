@@ -20,7 +20,7 @@ body{
 }
 
 .navbar li{
-    display:inline-block;
+    display: inline-block;
     padding: 3%;
 }
 
@@ -32,7 +32,7 @@ body{
 .section-title {
   text-align: center;
   font-family: 'DM Serif Display', serif; 
-  font-size: 72px;
+  font-size: 74px;
   margin-bottom: 20px;
   color: #162c3a; 
 }
