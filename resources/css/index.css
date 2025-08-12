@@ -2,6 +2,8 @@
 background: 162c3a (dark blue)
 ephasised headings: d97c50 (dark orange)
 headers and text: dba988 (soft orange)*/
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); */
+
 
 html{
     scroll-behavior:smooth;
@@ -11,7 +13,7 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-color: #f7f3e8;
+    background-color: white;
   }
 
 .experience{
@@ -52,7 +54,7 @@ p {
     position:relative;
     top:0;
     width:100%;
-    background-color:#f7f3e8 ;
+    background-color: white ;
     z-index: 1000;
 }
 
@@ -90,7 +92,7 @@ p {
 /* Button to toggle the menu */
 .menu-toggle {
     display: none; 
-    background-color:#f7f3e8;
+    background-color: white;
     color:#D97C50;
     border-radius: 12px;
     border: none;
@@ -137,7 +139,7 @@ p {
     display: flex;
     justify-content:space-between;
     align-items:center;
-    background-color:#f7f3e8;
+    background-color:white;
     color: #D97C50 ;
     padding:0 5%;
 }
@@ -213,7 +215,7 @@ p {
 }
 
 .title button{
-    background-color:#f7f3e8;
+    background-color:white;
     color:#D97C50;
     border-radius: 12px;
     border: solid 1px #D97C50;
@@ -224,9 +226,9 @@ p {
 
 .title button:hover{
     background-color:#dba988;
-    color:#f7f3e8;
+    color: white;
     border-radius: 12px;
-    border: solid 1px #f7f3e8;
+    border: solid 1px white;
 }
 
 

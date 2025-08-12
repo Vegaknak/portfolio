@@ -24,3 +24,26 @@ document.addEventListener("DOMContentLoaded", function() {
         navbar.classList.toggle("show"); // Toggle the 'show' class
     });
 });
+
+// select all filter buttons and filterable cards in the portfolio page
+const filterButtons = document.querySelectorAll(".filter_buttons button");
+const filterableCards = document.querySelectorAll(".filterable_cards .card");
+
+
+// def filterCards function
+const filterCards = e => {
+    document.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+    console.log(e.target);
+
+    filterableCards.forEach(card => {
+        card.classList.add("hide")
+        // check if card matches selected filte  or all is selected
+        if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
+            card.classList.remove("hide");
+        }
+    });
+};
+
+// add click event listener for each button
+filterButtons.forEach(button => button.addEventListener("click", filterCards));

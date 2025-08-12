@@ -48,7 +48,7 @@ p {
     position:relative;
     top:0;
     width:100%;
-    background-color:#f7f3e8 ;
+    background-color: #162c3a;
     z-index: 1000;
 }
 
@@ -63,7 +63,7 @@ p {
 
 .navbar a, .menu-toggle  {
     text-decoration:none;
-    color:black;
+    color: white;
     padding:14px 16px;
     font-size: 20px;
 

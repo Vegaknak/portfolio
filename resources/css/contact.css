@@ -7,7 +7,7 @@ body {
     height: 100vh;
     flex-direction:column;
     margin: auto;
-    background-color: #f7f3e8;
+    background-color: white;
   }
 
 
@@ -45,7 +45,7 @@ p {
     position:relative;
     top:0;
     width:100%;
-    background-color:#f7f3e8 ;
+    background-color: white ;
     z-index: 1000;
 }
 
