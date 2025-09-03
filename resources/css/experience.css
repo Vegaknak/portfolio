@@ -265,7 +265,7 @@ input[type="checkbox"]{
 } */
 
 .accordion input[type="checkbox"]:checked ~ .content {
-    max-height: 1000px; /* Use a large value to make sure all content fits */
+    max-height: 100%; 
     padding: 10px 10px 20px;
 }
 
