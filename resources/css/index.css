@@ -5,19 +5,26 @@ headers and text: dba988 (soft orange)*/
 /* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); */
 
 
+/* color redesign
+DARK GREEN: TEXT rgba(10, 51, 35, 1)
+ROSE: HEADERS background-color: rgba(211, 150, 140, 0.6) 
+MIDNIGHT BLUE: rgb(131, 153, 88)*/
+
 html{
     scroll-behavior:smooth;
   }
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: white;
+    display: flex;
+    flex-direction: column;
   }
 
 .experience{
-    background-color:#162c3a;
+    background-color:rgba(10, 51, 35, 1);
 }
 
 h1, h2, label{
@@ -39,14 +46,10 @@ p {
     font-weight: 200;
     font-style: normal;
 
-    color: #162c3a; 
+    color: rgba(10, 51, 35, 1); 
     font-size: 24px; 
     line-height: 1.5em;
     letter-spacing: -1.2;
-
-    /* margin: 0 0 24px;  */
-    /* text-align: justify;  */
-    /* text-justify: inter-word;  */
   }
 
 
@@ -69,7 +72,7 @@ p {
 
 .navbar a, .menu-toggle  {
     text-decoration:none;
-    color:black;
+    color: rgba(10, 51, 35, 1);
     padding:14px 16px;
     font-size: 20px;
 
@@ -81,11 +84,11 @@ p {
 
 
 .navbar a:hover{
-        color:#d97c50;
+        color: rgba(211, 150, 140, 0.6);
     }
 
 .menu-toggle:hover{
-    color:#162c3a;
+    color:rgba(211, 150, 140, 0.6);
 }
 
     
@@ -140,7 +143,7 @@ p {
     justify-content:space-between;
     align-items:center;
     background-color:white;
-    color: #D97C50 ;
+    color: rgb(131, 153, 88);
     padding:0 5%;
 }
 
@@ -156,7 +159,7 @@ p {
 .title p {
     font-size:24px;
     /* width:45%; */
-    color:#D97C50;
+    color:rgb(131, 153, 88);
     text-align:center;
 }
 
@@ -216,16 +219,16 @@ p {
 
 .title button{
     background-color:white;
-    color:#D97C50;
+    color:rgb(131, 153, 88);
     border-radius: 12px;
-    border: solid 1px #D97C50;
+    border: solid 1px rgb(131, 153, 88);
     cursor: pointer;
     padding: 10px 15px;
     text-align:center;
 }
 
 .title button:hover{
-    background-color:#dba988;
+    background-color: rgba(211, 150, 140, 0.6);
     color: white;
     border-radius: 12px;
     border: solid 1px white;
@@ -256,13 +259,16 @@ p {
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    background-color:#162c3a;
+    background-color:rgba(211, 150, 140, 0.6);
     /* padding:1%; */
     width:100%;
+    margin-top: auto;
 }
 
 .footer p{
     font-size: 14px;
+    margin: 0;
+    padding: 10px 5px;
 }
 
 .footer img{
@@ -272,7 +278,7 @@ p {
 }
 
 .fcolor{
-    color:#dba988;
+    color:rgb(16, 86, 102);
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;

@@ -4,9 +4,10 @@ html{
 
 body {
     width: 100%;
-    height: 100vh;
-    flex-direction:column;
-    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     background-color: white;
   }
 
@@ -17,7 +18,7 @@ font-weight: 400;
 font-style: normal;
 letter-spacing:-1.4px;
 font-size:36px;
-color:#D97C50;
+color:rgb(131, 153, 88);
 }
 
 h1 {
@@ -31,7 +32,7 @@ p {
     font-weight: 200;
     font-style: normal;
 
-    color: #162c3a; 
+    color: rgba(10, 51, 35, 1); 
     font-size: 24px; 
     line-height: 1.5em;
     letter-spacing: -1.2;
@@ -60,7 +61,7 @@ p {
 
 .navbar a, .menu-toggle  {
     text-decoration:none;
-    color:black;
+    color:rgba(10, 51, 35, 1);
     padding:14px 16px;
     font-size: 20px;
 
@@ -72,11 +73,11 @@ p {
 
 
 .navbar a:hover{
-        color:#d97c50;
+    color: rgba(211, 150, 140, 0.6) ;
     }
 
 .menu-toggle:hover{
-    color:#162c3a;
+    color:rgba(10, 51, 35, 1);
 }
 
 .textcontainer {
@@ -90,8 +91,8 @@ p {
 /* Button to toggle the menu */
 .menu-toggle {
     display: none; 
-    background-color:#f7f3e8;
-    color:#D97C50;
+    background-color:white;
+    color:rgba(211, 150, 140, 0.6) ;
     border-radius: 12px;
     border: none;
     cursor: pointer;
@@ -140,13 +141,16 @@ p {
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    background-color:#162c3a;
+    background-color:rgba(211, 150, 140, 0.6);
     /* padding:10px; */
     width:100%;
+    margin-top: auto;
 }
 
 .footer p{
     font-size: 14px;
+    margin: 0;
+    padding: 10px 5px;
 }
 
 .footer img{
@@ -156,7 +160,7 @@ p {
 }
 
 .fcolor{
-    color:#dba988;
+    color:rgb(16, 86, 102);
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;

@@ -4,9 +4,11 @@ html{
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: white;
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -44,7 +46,7 @@ p {
     font-size: 18px;
     line-height: 1.5em;
     letter-spacing: 0;
-    color: #162c3a;
+    color: rgba(10, 51, 35, 1);
     margin: 0 0 24px;
     text-align: justify;
     text-justify: inter-word;
@@ -63,7 +65,7 @@ p {
     font-size: 18px;
     line-height: 1.5em;
     letter-spacing: 0;
-    color: #162c3a;
+    color: rgba(10, 51, 35, 1);
     margin: 0 0 24px;
     text-align: justify;
     text-justify: inter-word;
@@ -93,7 +95,7 @@ p {
 
 .navbar a {
     text-decoration:none;
-    color:black;
+    color:rgba(10, 51, 35, 1);
     padding:14px 16px;
     font-size: 20px;
 
@@ -104,7 +106,7 @@ p {
 }
 
 .navbar a:hover{
-        color:#d97c50;
+        color:rgba(211, 150, 140, 0.6) ;
     }
 
     
@@ -112,7 +114,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #162c3a;
+    color: rgba(10, 51, 35, 1);
     width: 100%;
     position: relative;
     height: 300px;
@@ -139,19 +141,29 @@ p {
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    background-color:#162c3a;
-    padding:10px;
+    background-color:rgba(211, 150, 140, 0.6);
     width:100%;
+    margin-top: auto;
+}
 
+.footer p{
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 5px;
+    max-width: none;
+    width: auto;
+    text-align: center;
+    display: inline;
 }
 
 .footer img{
-    height:1cm;
-    width:1cm;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
 }
 
 .fcolor{
-    color:#dba988;
+    color:rgb(16, 86, 102);
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
