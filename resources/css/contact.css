@@ -8,7 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: white;
+    background: url('../images/banner-img.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
   }
 
 
@@ -18,7 +19,7 @@ font-weight: 400;
 font-style: normal;
 letter-spacing:-1.4px;
 font-size:36px;
-color:rgb(131, 153, 88);
+color: white;
 }
 
 h1 {
@@ -32,7 +33,7 @@ p {
     font-weight: 200;
     font-style: normal;
 
-    color: rgba(10, 51, 35, 1); 
+    color: white; 
     font-size: 24px; 
     line-height: 1.5em;
     letter-spacing: -1.2;
@@ -46,7 +47,7 @@ p {
     position:relative;
     top:0;
     width:100%;
-    background-color: white ;
+    background-color: white;
     z-index: 1000;
 }
 
@@ -61,7 +62,7 @@ p {
 
 .navbar a, .menu-toggle  {
     text-decoration:none;
-    color:rgba(10, 51, 35, 1);
+    color: rgba(10, 51, 35, 1);
     padding:14px 16px;
     font-size: 20px;
 
@@ -81,7 +82,7 @@ p {
 }
 
 .textcontainer {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center; 
     flex-direction: column;
@@ -130,6 +131,10 @@ p {
     .navbar.show ul {
         display: flex; 
     }
+}
+
+.textcontainer a {
+    color: white;
 }
 
 .deets{
